@@ -159,10 +159,36 @@
 
                     <section id="timer">
                         <h2>До конца акции осталось</h2>
-                        <div id="countdown"></div>
-                    </section>
+                        <div id="countdown">Обратный отсчёт...</div>
 
-                    <script src="script.js"></script>
+                        <script>                            
+                            const targetDate = new Date('2025-12-31T23:59:59').getTime();                     
+                            function updateCountdown() {
+                                const now = new Date().getTime();
+                                const timeLeft = targetDate - now;                                
+                                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                                const countdownEl = document.getElementById('countdown');
+                                                                
+                                if (timeLeft <= 0) {
+                                    countdownEl.innerHTML = "Время истекло!";
+                                    clearInterval(interval);
+                                } else {
+                                   
+                                    countdownEl.innerHTML = `
+                                        Осталось: ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд
+                                    `;
+                                }
+                            }                           
+                            const interval = setInterval(updateCountdown, 1000);
+                            updateCountdown();
+                        </script>
+
+                    </section>
+                    
+                  
 
                     <section id="order">
                         <h2>Форма заказа</h2>

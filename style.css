@@ -38,7 +38,7 @@
         --font-size-base: 0.625rem;
         --padding-base: 0.25rem;
         --margin-base: 0.25rem;
-        --product-width: 50%;
+        --product-width: 30%;
         --video-max-height: 200px;
         --form-width: 100%;
         --logo-size: 20px;
@@ -53,7 +53,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-size: 1.0rem; /* Использование фиксированного значения для оптимизации */
+    font-size: 1.0rem; /* Г€Г±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГҐ ГґГЁГЄГ±ГЁГ°Г®ГўГ Г­Г­Г®ГЈГ® Г§Г­Г Г·ГҐГ­ГЁГї Г¤Г«Гї Г®ГЇГІГЁГ¬ГЁГ§Г Г¶ГЁГЁ */
 }
 
 .logo {

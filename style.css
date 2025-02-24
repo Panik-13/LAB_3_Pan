@@ -60,7 +60,7 @@ h1, h2, h3 {
     border: 2px solid #ffffff; /* Цвет рамки */
     border-radius: 20px; /* Округление углов */
     padding: 20px; /* Отступы внутри рамки */
-    font-size: 24px; /* Размер шрифта */
+    font-size: 12px; /* Размер шрифта */
     text-align: center; /* Центрирование текста */
     background-color: #000000; /* Цвет фона */
     color: #ffffff;
